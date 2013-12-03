@@ -19,6 +19,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 	</head>
+	<!-- Body -->
 	<body>
 		<header>
 			<!-- Index Title -->
@@ -26,21 +27,46 @@
 			<!-- App Description -->
 			<p><strong>...Preparing you for your future prosperity.</strong></p>
 		</header>
-		<!-- Start Fieldset & Legend -->
-		<fieldset>
-			<legend>Coins</legend>
-				<ul>
-					<!-- Submit / Add New Coin -->
-					<a href="additem.html"><input type="submit" value="Add New Coin!" /></a>
-					<!-- Area Title -->
-					<h2>Add coins to your collection.</h2>
-					<!-- Small Layout Description -->
-					<li>It appears you don't have any coins. But if you did, they would be right here.</li>
-					<!-- Example Layout / Disabled -->
-					<li>Example<a href=""><input type="submit" value="View Coin" disabled /></a></li>
-				</ul>
+
+		<!-- Search -->
+		<div class="search">
+            <input type="text" id="search" /><input type="submit" value="Search" id="searchButton" />
+        </div></br>
+
+        <img class="imagecenter" src="images/mainlogo.png" alt="images/Logo.png" />
+
+        <!-- Start Fieldset -->
+		<!-- Browse -->
+		<fieldset class="browse" align="center">
+		    <legend> Browse Categories</legend>
+		        <div>
+		            <a href="#"><img src="images/Penny.png" id="Penny" class="coincatimg"/></a>
+		                <ul id="pennyList" style="display:none;">
+                            <li name="coinList"></li></ul>
+		            <a href="#"><img src="images/Nickel.png" id="Nickel" class="coincatimg"/></a>
+		                <ul id="nickelList" style="display:none;">
+                            <li name="coinlistList"></li></ul>
+		            <a href="#"><img src="images/Dime.png" title="Dime" class="coincatimg"/></a>
+		                <ul id="dimeList" style="display:none;">
+                            <li name="coinList"></li></ul></br>
+		            <a href="#"><img src="images/Quarter.png" title="Quarter" class="coincatimg"/></a>
+                        <ul id="quarterList" style="display:none;">
+                            <li name="coinList"></li></ul>
+		            <a href="#"><img src="images/Half-dollar.png" title="Half-dollar" class="coincatimg"/></a>
+		                <ul id="halfdollarList" style="display:none;">
+                            <li name="coinList"></li></ul>
+		            <a href="#"><img src="images/Silver-dollar.png" title="Silver-Dollar" class="coincatimg"/></a>
+		                <ul id="silverdollarList" style="display:none;">
+                            <li name="coinList"></li></ul></br>
+                </div>            
+		</fieldset> 
 		<!-- End Fieldset -->
-		</fieldset>
+
+		<!-- Submit / Add New Coin --> 
+		<nav>      
+		    <a href="additem.html"><input type="submit" value="Add New Coin!" class="start" /></a>
+		</nav>    
+					
 	<!-- Footer Data-->
 	<footer id="foot">
 		<small>This is a collection of coins that are being saved for future appraisal from value increase!!</small>
